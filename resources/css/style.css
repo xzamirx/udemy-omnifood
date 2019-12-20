@@ -17,7 +17,7 @@ Dark Orange color: #c26a1e
 	box-sizing: border-box;
 }
 
-html {
+html{
 	background-color: #fff;
 	color: #555;
 	font-family: "Lato", "Arial", "sans-serif";
@@ -170,6 +170,9 @@ header {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -204,4 +207,47 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
 	border-bottom: 2px solid #e67e22;
+}
+/* -------------------------------*/
+/* Features */
+/* -------------------------------*/
+
+.section-features .long-copy {
+	margin-bottom: 30px;
+}
+/* -------------------------------*/
+/* MEALS */
+/* -------------------------------*/
+.section-meals{
+	padding: 0px;
+}
+.meals-showcase {
+	list-style: none;
+	width: 100%;
+}
+
+.meals-showcase li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+	margin: 0;
+	overflow: hidden;
+	background: #000;
+}
+
+.meal-photo img{
+	width: 100%;
+	transform: scale(1.15);
+	transition: transform 0.2s, opacity 0.5s;
+	opacity: 0.7;
+}
+
+.meal-photo img:hover{
+	transform: scale(1.03);
+	opacity: 1;
+
 }
